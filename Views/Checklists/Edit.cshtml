@@ -1,0 +1,164 @@
+﻿@model Noested.Models.Checklist
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Checklist</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SjekklisteID" />
+            <div class="form-group">
+                <label asp-for="OrdreNr" class="control-label"></label>
+                <input asp-for="OrdreNr" class="form-control" />
+                <span asp-validation-for="OrdreNr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GodkjentAv" class="control-label"></label>
+                <input asp-for="GodkjentAv" class="form-control" />
+                <span asp-validation-for="GodkjentAv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UtarbeidetAv" class="control-label"></label>
+                <input asp-for="UtarbeidetAv" class="form-control" />
+                <span asp-validation-for="UtarbeidetAv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekBremser" class="control-label"></label>
+                <select asp-for="MekBremser" class="form-control"></select>
+                <span asp-validation-for="MekBremser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekTrommellager" class="control-label"></label>
+                <select asp-for="MekTrommellager" class="form-control"></select>
+                <span asp-validation-for="MekTrommellager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekOpplagringPTO" class="control-label"></label>
+                <select asp-for="MekOpplagringPTO" class="form-control"></select>
+                <span asp-validation-for="MekOpplagringPTO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekWire" class="control-label"></label>
+                <select asp-for="MekWire" class="form-control"></select>
+                <span asp-validation-for="MekWire" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekKjedestrammer" class="control-label"></label>
+                <select asp-for="MekKjedestrammer" class="form-control"></select>
+                <span asp-validation-for="MekKjedestrammer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekPinionlager" class="control-label"></label>
+                <select asp-for="MekPinionlager" class="form-control"></select>
+                <span asp-validation-for="MekPinionlager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekClutch" class="control-label"></label>
+                <select asp-for="MekClutch" class="form-control"></select>
+                <span asp-validation-for="MekClutch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MekKjedehjulkiler" class="control-label"></label>
+                <select asp-for="MekKjedehjulkiler" class="form-control"></select>
+                <span asp-validation-for="MekKjedehjulkiler" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydSylinder" class="control-label"></label>
+                <select asp-for="HydSylinder" class="form-control"></select>
+                <span asp-validation-for="HydSylinder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydSlanger" class="control-label"></label>
+                <select asp-for="HydSlanger" class="form-control"></select>
+                <span asp-validation-for="HydSlanger" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydHydraulikkblokk" class="control-label"></label>
+                <select asp-for="HydHydraulikkblokk" class="form-control"></select>
+                <span asp-validation-for="HydHydraulikkblokk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydTankolje" class="control-label"></label>
+                <select asp-for="HydTankolje" class="form-control"></select>
+                <span asp-validation-for="HydTankolje" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydGirboksolje" class="control-label"></label>
+                <select asp-for="HydGirboksolje" class="form-control"></select>
+                <span asp-validation-for="HydGirboksolje" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HydBremsesylinder" class="control-label"></label>
+                <select asp-for="HydBremsesylinder" class="form-control"></select>
+                <span asp-validation-for="HydBremsesylinder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElLedningsnett" class="control-label"></label>
+                <select asp-for="ElLedningsnett" class="form-control"></select>
+                <span asp-validation-for="ElLedningsnett" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElRadio" class="control-label"></label>
+                <select asp-for="ElRadio" class="form-control"></select>
+                <span asp-validation-for="ElRadio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElKnappekasse" class="control-label"></label>
+                <select asp-for="ElKnappekasse" class="form-control"></select>
+                <span asp-validation-for="ElKnappekasse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrykkSjekkBar" class="control-label"></label>
+                <select asp-for="TrykkSjekkBar" class="form-control"></select>
+                <span asp-validation-for="TrykkSjekkBar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TestVinsj" class="control-label"></label>
+                <select asp-for="TestVinsj" class="form-control"></select>
+                <span asp-validation-for="TestVinsj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TestTrekkraft" class="control-label"></label>
+                <select asp-for="TestTrekkraft" class="form-control"></select>
+                <span asp-validation-for="TestTrekkraft" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TestBremsekraft" class="control-label"></label>
+                <select asp-for="TestBremsekraft" class="form-control"></select>
+                <span asp-validation-for="TestBremsekraft" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kommentar" class="control-label"></label>
+                <select asp-for="Kommentar" class="form-control"></select>
+                <span asp-validation-for="Kommentar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Signatur" class="control-label"></label>
+                <select asp-for="Signatur" class="form-control"></select>
+                <span asp-validation-for="Signatur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatoFullfort" class="control-label"></label>
+                <input asp-for="DatoFullfort" class="form-control" />
+                <span asp-validation-for="DatoFullfort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,191 @@
+﻿@model IEnumerable<Noested.Models.Checklist>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrdreNr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GodkjentAv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UtarbeidetAv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekBremser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekTrommellager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekOpplagringPTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekWire)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekKjedestrammer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekPinionlager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekClutch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MekKjedehjulkiler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydSylinder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydSlanger)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydHydraulikkblokk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydTankolje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydGirboksolje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HydBremsesylinder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElLedningsnett)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElRadio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElKnappekasse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrykkSjekkBar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestVinsj)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestTrekkraft)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestBremsekraft)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kommentar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Signatur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatoFullfort)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrdreNr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GodkjentAv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UtarbeidetAv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekBremser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekTrommellager)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekOpplagringPTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekWire)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekKjedestrammer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekPinionlager)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekClutch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MekKjedehjulkiler)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydSylinder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydSlanger)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydHydraulikkblokk)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydTankolje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydGirboksolje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HydBremsesylinder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElLedningsnett)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElRadio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElKnappekasse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrykkSjekkBar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestVinsj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestTrekkraft)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestBremsekraft)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kommentar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Signatur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatoFullfort)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SjekklisteID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SjekklisteID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SjekklisteID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

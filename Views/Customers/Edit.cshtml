@@ -1,0 +1,64 @@
+﻿@model Noested.Models.Customer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="KundeNr" />
+            <div class="form-group">
+                <label asp-for="Fornavn" class="control-label"></label>
+                <input asp-for="Fornavn" class="form-control" />
+                <span asp-validation-for="Fornavn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Etternavn" class="control-label"></label>
+                <input asp-for="Etternavn" class="form-control" />
+                <span asp-validation-for="Etternavn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adresse" class="control-label"></label>
+                <input asp-for="Adresse" class="form-control" />
+                <span asp-validation-for="Adresse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Postnr" class="control-label"></label>
+                <input asp-for="Postnr" class="form-control" />
+                <span asp-validation-for="Postnr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Poststed" class="control-label"></label>
+                <input asp-for="Poststed" class="form-control" />
+                <span asp-validation-for="Poststed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefon" class="control-label"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Epost" class="control-label"></label>
+                <input asp-for="Epost" class="form-control" />
+                <span asp-validation-for="Epost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

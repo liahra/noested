@@ -1,0 +1,107 @@
+﻿@model IEnumerable<Noested.Models.ServiceOrder>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KundeNr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrdreMottatt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrdreFullfort)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Serienummer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProduktType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aarsmodell)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Garanti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kundeavtale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Beskrivelse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvlagteDeler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UtskiftetDelerRetur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Frakt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErAktiv)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KundeNr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrdreMottatt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrdreFullfort)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serienummer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProduktType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aarsmodell)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Garanti)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kundeavtale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Beskrivelse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvlagteDeler)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UtskiftetDelerRetur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Frakt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ErAktiv)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OrdreNr">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OrdreNr">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OrdreNr">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

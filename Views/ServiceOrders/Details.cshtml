@@ -1,0 +1,96 @@
+﻿@model Noested.Models.ServiceOrder
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ServiceOrder</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KundeNr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KundeNr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrdreMottatt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OrdreMottatt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrdreFullfort)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OrdreFullfort)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Serienummer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Serienummer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProduktType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProduktType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Aarsmodell)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Aarsmodell)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Garanti)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Garanti)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kundeavtale)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kundeavtale)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Beskrivelse)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AvlagteDeler)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AvlagteDeler)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UtskiftetDelerRetur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UtskiftetDelerRetur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Frakt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Frakt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ErAktiv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ErAktiv)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.OrdreNr">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

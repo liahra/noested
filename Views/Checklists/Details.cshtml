@@ -1,0 +1,180 @@
+﻿@model Noested.Models.Checklist
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Checklist</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrdreNr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OrdreNr)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GodkjentAv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GodkjentAv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UtarbeidetAv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UtarbeidetAv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekBremser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekBremser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekTrommellager)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekTrommellager)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekOpplagringPTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekOpplagringPTO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekWire)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekWire)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekKjedestrammer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekKjedestrammer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekPinionlager)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekPinionlager)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekClutch)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekClutch)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MekKjedehjulkiler)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MekKjedehjulkiler)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydSylinder)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydSylinder)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydSlanger)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydSlanger)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydHydraulikkblokk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydHydraulikkblokk)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydTankolje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydTankolje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydGirboksolje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydGirboksolje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HydBremsesylinder)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HydBremsesylinder)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ElLedningsnett)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ElLedningsnett)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ElRadio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ElRadio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ElKnappekasse)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ElKnappekasse)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TrykkSjekkBar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TrykkSjekkBar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TestVinsj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TestVinsj)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TestTrekkraft)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TestTrekkraft)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TestBremsekraft)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TestBremsekraft)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kommentar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kommentar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Signatur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Signatur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DatoFullfort)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatoFullfort)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.SjekklisteID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
